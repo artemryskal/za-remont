@@ -1,0 +1,16 @@
+.btn {
+  outline: none;
+  border: none;
+  text-decoration: none;
+  font: inherit;
+  color: inherit;
+  padding: 12px 24px;
+  font-weight: 600;
+  border-radius: 7px;
+  cursor: pointer;
+
+  &--primary {
+    background-color: #0447A9;
+    color: #fff;
+  }
+}

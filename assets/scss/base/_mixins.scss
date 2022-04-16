@@ -1,0 +1,15 @@
+@mixin section-settings($pt, $pb, $maw, $mb) {
+  .section {
+    padding-top: $pt;
+    padding-bottom: $pb;
+  }
+
+  .description {
+    max-width: $maw;
+  }
+
+  .heading,
+  .description {
+    margin-bottom: $mb;
+  }
+}

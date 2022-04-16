@@ -1,0 +1,16 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &--white {
+    color: #fff;
+  }
+
+  &__content {
+    max-width: 744px;
+  }
+}

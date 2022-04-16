@@ -1,0 +1,49 @@
+@import 'base/reset';
+@import 'base/variables';
+@import 'base/typography';
+@import 'components/btn';
+@import 'components/heading';
+@import 'components/description';
+@import 'components/section';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.page__body {
+  margin: 0;
+
+  &.fixed {
+    overflow: hidden;
+  }
+}
+
+.container {
+  padding: 0 8%;
+  width: 100%;
+}
+
+.col-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2%;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
